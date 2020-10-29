@@ -4,7 +4,7 @@ import rospy
 from std_msgs.msg import Float32
 import random
 def gen_number():
-    pub = rospy.Publisher('random_number', Float32, queue_size=10)
+    pub = rospy.Publisher('random_number', Float32)
     rospy.init_node('random_number_generator', log_level=rospy.INFO)
     rospy.loginfo("Generating random numbers")
 
